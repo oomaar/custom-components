@@ -1,6 +1,6 @@
-.home-container {
+.dropdown-feature-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   height: calc(100vh - 99px);
+  padding-top: 40px;
 }
