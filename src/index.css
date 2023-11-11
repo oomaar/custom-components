@@ -8,8 +8,8 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   background: #202124;
   color: #ccddf5;
 }
@@ -39,11 +39,23 @@ ul {
 }
 
 section {
-  padding: 16px;
-  margin: 24px;
   border-radius: 8px;
   background: #0d1117;
   height: 90vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+ol {
+  margin: 0px;
+  padding: 0px;
 }
 
 ::-webkit-scrollbar {

@@ -5,6 +5,9 @@ type DropdownProps = {};
 
 export const Dropdown = (props: DropdownProps) => {
   const {} = props;
+
+  //   TODO: Setup props & enhance UI
+
   const data = useMemo(() => buildStaticDropdownData(), []);
 
   const [dropdownText, setDropdownText] = useState("Select an option");
@@ -47,6 +50,13 @@ export const Dropdown = (props: DropdownProps) => {
         onClick={handleToggleDropdown}
       >
         {dropdownText}
+        <span
+          className={`material-icons dropdown-button-icon ${
+            showDropdown ? "dropdown-button-icon-rotate" : ""
+          }`}
+        >
+          expand_more
+        </span>
       </button>
       <ul
         className={`dropdown-list ${
