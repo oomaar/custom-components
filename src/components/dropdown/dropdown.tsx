@@ -4,10 +4,6 @@ import "./dropdown.css";
 type DropdownProps = {};
 
 export const Dropdown = (props: DropdownProps) => {
-  const {} = props;
-
-  //   TODO: Setup props & enhance UI
-
   const data = useMemo(() => buildStaticDropdownData(), []);
 
   const [dropdownText, setDropdownText] = useState("Select an option");
