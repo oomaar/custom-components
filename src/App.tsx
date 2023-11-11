@@ -1,13 +1,17 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import { Dropdown } from "./components";
+import { DropdownFeature, Home } from "./screens";
+import { Layout } from "./layout/layout";
 
 export const App = () => {
   return (
-    <div>
-      <section>
-        <h1 className="section-title">Dropdown</h1>
-        <Dropdown />
-      </section>
-    </div>
+    <Router>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/dropdown" element={<DropdownFeature />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 };

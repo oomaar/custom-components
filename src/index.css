@@ -71,3 +71,8 @@ ol {
 ::-webkit-scrollbar-thumb:hover {
   background: #ccdfff;
 }
+
+::selection {
+  background: #ffc0cb;
+  color: #000;
+}
